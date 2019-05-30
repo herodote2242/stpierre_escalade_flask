@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template, redirect, url_for
 from app import app
 
 @app.route('/')
@@ -15,3 +15,6 @@ def media():
 
 def horaires():
     return render_template('horaires.html')
+
+def ffme():
+    return redirect('https://www.ffme69.fr')
