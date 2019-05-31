@@ -1,20 +1,26 @@
-from flask import render_template, redirect, url_for
+#!/usr/bin/env python3
+# -*- coding: Utf-8 -*
+
+from flask import render_template, redirect
 from app import app
 
 @app.route('/')
 @app.route('/index')
-
-def index():
+def visit_index():
     return render_template('index.html')
 
-def club():
+@app.route('/club')
+def visit_club():
     return render_template('club.html')
 
-def media():
+@app.route('/media')
+def visit_media():
     return render_template('media.html')
 
-def horaires():
+@app.route('/horaires')
+def visit_horaires():
     return render_template('horaires.html')
 
-def ffme():
+@app.route('/ffme')
+def visit_ffme():
     return redirect('https://www.ffme69.fr')

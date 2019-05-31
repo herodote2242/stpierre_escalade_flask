@@ -21,7 +21,7 @@
 <div id="wrapper">
         <header id="header">
             <div class="container">
-                <div class="logo"><a href="{{ url_for('index'}}" title="Retour à l'acceuil"><img src="{{ url_for('static', filename='images/logo-hd-reduit.jpg') }}" alt="logo St Pierre Escalade"></a></div>
+                <div class="logo"><a href="/index" title="Retour à l'acceuil"><img src="{{ url_for('static', filename='images/logo-hd-reduit.jpg') }}" alt="logo St Pierre Escalade"></a></div>
                 <nav id="nav">
                     <div class="opener-holder">
                         <a href="#" class="nav-opener"><span></span></a>
@@ -29,11 +29,11 @@
                     <a href="javascript:" class="btn btn-primary rounded">Espace membres</a>
                     <div class="nav-drop">
                         <ul>
-                            <li class="active visible-sm visible-xs"><a href="{{ url_for('media') }}">Media</a></li>
-                            <li><a href="{{ url_for('media') }}">Media</a></li>
-                            <li><a href="{{ url_for('club') }}">Le club</a></li>
-                            <li><a href="{{ url_for('ffme') }}">La FFME</a></li>
-                            <li><a href="{{ url_for('horaires') }}">Les horaires</a></li>
+                            <li class="active visible-sm visible-xs"><a href="/media">Media</a></li>
+                            <li><a href="/media">Media</a></li>
+                            <li><a href="/club">Le club</a></li>
+                            <li><a href="/ffme">La FFME</a></li>
+                            <li><a href="/horaires">Les horaires</a></li>
                         </ul>
                         <div class="drop-holder visible-sm visible-xs">
                             <span>Suivez nous</span>
@@ -57,7 +57,7 @@
                 <span class="info">Bloc en salle et sorties voies naturelles</span>
             </div>
         </div>
-        <img src="{{ url_for('static', filename='images/IMG_0111.jpg' }}" alt="mur bloc St Pierre Escalade" title="mur bloc St Pierre Escalade" class="bg-stretch">
+        <img src="{{ url_for('static', filename='images/IMG_0111.jpg') }}" alt="mur bloc St Pierre Escalade" title="mur bloc St Pierre Escalade" class="bg-stretch">
     </section>
     <section class="main">
         <div class="container">
