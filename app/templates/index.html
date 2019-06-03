@@ -1,15 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-<!---<section class="main">
-        <div class="container">
-            <div id="cta">
-                <a href="javascript:" class="btn btn-primary rounded">Let's climb !</a>
-            </div>--->
+
             <div class="row">
                 <div class="text-box col-md-offset-1 col-md-10">
                     <h2>A propos de l'association et du mur</h2>
-                    <p>Nous sommes une association de Loi 1901 fondée en juin 2017. Le mur a été financé par la mairie de St Pierre de Chandieu, le Comité Départemental de la Fédération Française de la Montagne et de l'Escalade. Il est construit depuis avril 2019 et sera inauguré en juin 2019. Il sera utilisé par les scolaires (école primaire et collège), par la MJC... et par nous ! L'association sera ouverte aux adhésions pour la rentrée scolaire 2019.</p>
+                    <p>Nous sommes une association de Loi 1901 fondée en juin 2017. Le mur a été financé par la mairie de St Pierre de Chandieu et le Comité Départemental de la Fédération Française de la Montagne et de l'Escalade. Il est construit depuis avril 2019 et sera inauguré en juin 2019. Il sera utilisé par les scolaires (collège..), et par nous ! L'association sera ouverte aux adhésions pour la rentrée scolaire 2019.</p>
                 </div>
             </div>
         </div>
@@ -19,18 +15,30 @@
             <div class="row">
                 <div class="col-md-5">
                     <ul class="visual-list">
+
                         <li>
                             <div class="img-holder">
-                                <img src="images/construction_icon.png" width="110" height="110" alt="construction icon">
+                                <img class="pull-left" src="{{ url_for('static', filename='images/information_icon.png') }}" width="110"  height="110" alt="information icon">
                             </div>
                             <div class="text-holder">
-                                <h3>Construction de notre beau mur !</h3>
-                                <p>Pendant les vacances de Pâques 2019, le mur d'escalade tant attendu a été entièrement construit, et les tapis installés. Plus qu'à patienter pour la pose de voies et l'inauguration officielle prévue pour le 15/6/19 !</p>
+                                <h3>Journée portes-ouvertes</h3>
+                                <p>Afin de faire connaître le bloc et l'association aux petits et grands de notre village, nous organisons le 29 juin une journée porte-ouverte. Possibilité de se préinscrire pour la rentrée.</a></p>
                             </div>
                         </li>
+
                         <li>
                             <div class="img-holder">
-                                <img class="pull-left" src="images/information_icon.png" width="110"  height="110" alt="information icon">
+                                <img class="pull-left" src="{{ url_for('static', filename='images/information_icon.png') }}" width="110"  height="110" alt="information icon">
+                            </div>
+                            <div class="text-holder">
+                                <h3>Contest d'inauguration</h3>
+                                <p>Le jeudi 6 juin, de 18h à 22h, nous organisons un contest promotionnel pour faire connaître notre mur et pour lancer l'association. C'est une compétition amicale, ouverte aux pratiquants autonomes et équipés. Inscription 10€ licenciés, 16€ non-licenciés. Plus d'infos sur <a href="/facebook">la page facebook.</a></p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="img-holder">
+                                <img class="pull-left" src="{{ url_for('static', filename='images/information_icon.png') }}" width="110"  height="110" alt="information icon">
                             </div>
                             <div class="text-holder">
                                 <h3>Signature de la convention d'utilisation avec la mairie.</h3>
@@ -38,10 +46,20 @@
                             </div>
                         </li>
 
+                        <li>
+                            <div class="img-holder">
+                                <img src="{{ url_for('static', filename='images/construction_icon.png') }}" width="110" height="110" alt="construction icon">
+                            </div>
+                            <div class="text-holder">
+                                <h3>Construction de notre beau mur !</h3>
+                                <p>Pendant les vacances de Pâques 2019, le mur d'escalade tant attendu a été entièrement construit, et les tapis installés. Plus qu'à patienter pour la pose de voies et le contest promotionnel du 6 juin !</p>
+                            </div>
+                        </li>
+
                     </ul>
                 </div>
                 <div class="mascotte">
-                    <div class="img-slide scroll-trigger"><img src="images/cameleon_st_pierre_mod.jpg" alt="mascotte St Pierre Escalade" title="Gecky le gecko"></div>
+                    <div class="img-slide scroll-trigger"><img src="{{ url_for('static', filename='images/cameleon_st_pierre_mod.jpg') }}" alt="mascotte St Pierre Escalade" title="Léon le caméléon !"></div>
                 </div>
             </div>
         </div>

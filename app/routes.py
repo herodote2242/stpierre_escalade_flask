@@ -24,3 +24,7 @@ def visit_horaires():
 @app.route('/ffme')
 def visit_ffme():
     return redirect('https://www.ffme69.fr')
+
+@app.route('/facebook')
+def visit_fb():
+    return redirect('https://www.facebook.com/SaintPierreEscalade')

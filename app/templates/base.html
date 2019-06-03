@@ -4,7 +4,6 @@
 <!--- Adapted by Matthias GIL, Python Django developer, Lyon, France, for the St Pierre Escalade association, a rock climbing local organization --->
 <html>
 <head>
-<!--<link rel="shortcut icon" href="{{ url_for('static', filename='pictures/favicon.ico') }}">--->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>St Pierre Escalade</title>
@@ -29,7 +28,7 @@
                     <a href="javascript:" class="btn btn-primary rounded">Espace membres</a>
                     <div class="nav-drop">
                         <ul>
-                            <li class="active visible-sm visible-xs"><a href="/media">Media</a></li>
+                            <li class="active visible-sm visible-xs"><a href="/index">Accueil</a></li>
                             <li><a href="/media">Media</a></li>
                             <li><a href="/club">Le club</a></li>
                             <li><a href="/ffme">La FFME</a></li>
@@ -38,7 +37,6 @@
                         <div class="drop-holder visible-sm visible-xs">
                             <span>Suivez nous</span>
                             <ul class="social-networks">
-                                <li><a class="fa fa-github" href="#"></a></li>
                                 <li><a class="fa fa-twitter" href="#"></a></li>
                                 <li><a class="fa fa-facebook" href="#"></a></li>
                             </ul>
@@ -63,14 +61,6 @@
         <div class="container">
             <div id="cta">
                 <a href="javascript:" class="btn btn-primary rounded">Let's climb !</a>
-            <!---</div>
-            <div class="row">
-                <div class="text-box col-md-offset-1 col-md-10">
-                    <h2>A propos de l'association et du mur</h2>
-                    <p>Nous sommes une association de Loi 1901 fondée en juin 2017. Le mur a été financé par la mairie de St Pierre de Chandieu, le Comité Départemental de la Fédération Française de la Montagne et de l'Escalade. Il est construit depuis avril 2019 et sera inauguré en juin 2019. Il sera utilisé par le collège, et par nous ! L'association sera ouverte aux adhésions pour la rentrée scolaire 2019.</p>
-                </div>
-            </div>
-        </div>-->
 
 {% block content %}
 {% endblock %}
@@ -107,8 +97,8 @@
         </div>
     </footer>
 </div>
-<script src="{{ url_for('static', filename='js/jquery-1.11.2.min.js' }}"></script>
+<script src="{{ url_for('static', filename='js/jquery-1.11.2.min.js') }}"></script>
 <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
-<script src="{{ url_for('static', filename='js/jquery.main.js' }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.main.js') }}"></script>
 </body>
 </html>
