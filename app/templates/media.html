@@ -2,6 +2,20 @@
 
 {% block content %}
             <div class="row">
+
+                <div class="text-box col-md-offset-1 col-md-10">
+                    <p>Le contest promotionnel du 6 juin :</p>
+                    <div id="slider">
+                        <figure>
+                            <img src="{{ url_for('static', filename='images/media/contest/contest1.jpg') }}" alt>
+                            <img src="{{ url_for('static', filename='images/media/contest/contest2.jpg') }}" alt>
+                            <img src="{{ url_for('static', filename='images/media/contest/contest3.jpg') }}" alt>
+                            <img src="{{ url_for('static', filename='images/media/contest/contest4.jpg') }}" alt>
+                            <img src="{{ url_for('static', filename='images/media/contest/contest5.jpg') }}" alt>
+                        </figure>
+                    </div>
+                </div>
+
                 <div class="text-box col-md-offset-1 col-md-10">
                     <p>Le chantier de construction du bloc !</p>
                     <div id="slider">
@@ -14,6 +28,7 @@
                         </figure>
                     </div>
                 </div>
+
                 <div class="text-box col-md-offset-1 col-md-10">
                     <p>Nos sorties précédentes...</p>
                     <div id="slider">
@@ -26,6 +41,7 @@
                         </figure>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
