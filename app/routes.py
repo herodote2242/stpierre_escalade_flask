@@ -27,3 +27,4 @@ def visit_ffme():
 @app.route('/facebook')
 def visit_fb():
     return redirect('https://www.facebook.com/SaintPierreEscalade')
+
